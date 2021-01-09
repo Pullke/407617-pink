@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body class="page__body">
+
+<!-- Header -->
+
+    <header class="catalog__header catalog-header header">
+      <nav class="catalog-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__image" src="img/pink-logo-mobile.svg" width="74" height="23" alt="Сервис «Pink»">
+          </a>
+          <button class="main-nav__toggle toggle">
+            <span class="toggle__text visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list list">
+            <li class="main-nav__list-item list-item">
+              <a class="list-item__link link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__list-item list-item">
+              <a class="list-item__link link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__list-item list-item">
+              <a class="list-item__link link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__list-item list-item">
+              <a class="list-item__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="catalog-header__box catalog-box">
+        <h1 class="catalog-box__title">Фотографии пользователей</h1>
+      </div>
+    </header>
+
+<!-- Main -->
+
+    <main class="catalog_main catalog-main">
+      <section class="catalog-main__user-gallery user-gallery">
+        <h2 class="user-gallery__title visually-hidden">Галлерея пользователей</h2>
+        <p class="user-gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <article class="user-gallery__post user-post">
+          <a class="user-post__link" href="#">
+            <span class="user-post__name">Панорама дня</span>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама" class="user-post__image">
+            </picture>
+          </a>
+          <div class="user-post__box">
+            <p class="user-post__author">
+              Анна
+              <span class="user-post__time">(5 минут назад)</span>
+            </p>
+            <p class="user-post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="user-post__rating">
+              <button class="user-post__like-button" type="button"></button>
+              <p class="user-post__like-counter">
+                Нравится:
+                <span class="user-post__like-number">215</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <div class="user-gallery__container">
+
+          <article class="user-gallery__post user-post">
+            <div class="user-post__box">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <p class="user-post__author">
+                Левон
+                <span class="user-post__time">(5 часов назад)</span>
+              </p>
+              <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="user-post__rating">
+                <button class="user-post__like-button" type="button"></button>
+                <p class="user-post__like-counter">
+                  Нравится:
+                  <span class="user-post__like-number">356</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="user-gallery__post user-post">
+            <div class="user-post__box">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <p class="user-post__author">
+                Антон
+                <span class="user-post__time">(12 часов назад)</span>
+              </p>
+              <p class="user-post__text">Соседи будут рады!</p>
+              <div class="user-post__rating">
+                <button class="user-post__like-button" type="button"></button>
+                <p class="user-post__like-counter">
+                  Нравится:
+                  <span class="user-post__like-number">666</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="user-gallery__post user-post">
+            <div class="user-post__box">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <p class="user-post__author">
+                Борис
+                <span class="user-post__time">(20 часов назад)</span>
+              </p>
+              <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="user-post__rating">
+                <button class="user-post__like-button" type="button"></button>
+                <p class="user-post__like-counter">
+                  Нравится:
+                  <span class="user-post__like-number">215</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="user-gallery__post user-post">
+            <div class="user-post__box">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <p class="user-post__author">
+                Сергей
+                <span class="user-post__time">(25 часов назад)</span>
+              </p>
+              <p class="user-post__text">Самая кубанская в мире!</p>
+              <div class="user-post__rating">
+                <button class="user-post__like-button" type="button"></button>
+                <p class="user-post__like-counter">
+                  Нравится:
+                  <span class="user-post__like-number">4</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="user-gallery__post user-post">
+            <div class="user-post__box">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <p class="user-post__author">
+                Максим
+                <span class="user-post__time">(40 часов назад)</span>
+              </p>
+              <p class="user-post__text">Где снег-то?</p>
+              <div class="user-post__rating">
+                <button class="user-post__like-button" type="button"></button>
+                <p class="user-post__like-counter">
+                  Нравится:
+                  <span class="user-post__like-number">150</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="user-gallery__post user-post">
+            <div class="user-post__box">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                  <img class="user-post__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <p class="user-post__author">
+                Надежда
+                <span class="user-post__time">(45 часов назад)</span>
+              </p>
+              <p class="user-post__text">Всем GM и взаимные лайки!</p>
+              <div class="user-post__rating">
+                <button class="user-post__like-button" type="button"></button>
+                <p class="user-post__like-counter">
+                  Нравится:
+                  <span class="user-post__like-number">2560</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="user-post__new user-post-new">
+            <p class="user-post__appeal">Затмите их всех! <br>
+              Выкладывайте все, что накопилось в телефоне!
+            </p>
+            <div class="user-post-new__box">
+
+              <form action="#" class="user-post-new__form-photo form-photo">
+                <div class="form-photo__image-container">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                    <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото пользователя" class="user-post__image">
+                  </picture>
+                  <input class="form-photo__file" type="file">
+                </div>
+
+                <div class="form-photo__filters filters">
+                  <div class="filters__image-filter image-filter">
+                    <div class="image-filter__item image-filter__item--active">
+                      <button class="image-filter__button image-filter__button--crop" type="button"></button>
+                      <div class="image-filter__range image-filter-range">
+                        <span class="image-filter-range__scale">
+                          <span class="image-filter-range__bar" style="width: 80%"></span>
+                        </span>
+                        <span class="image-filter-range__to image-filter-range__thumb--crop"></span>
+                        <!-- <input type="range"> -->
+                      </div>
+                    </div>
+
+                    <div class="image-filter__item image-filter__item">
+                      <button class="image-filter__button image-filter__button--fill" type="button"></button>
+                      <div class="image-filter__range image-filter-range">
+                        <span class="image-filter-range__scale">
+                          <span class="image-filter-range__bar" style="width: 20%"></span>
+                        </span>
+                        <span class="image-filter-range__to image-filter-range__thumb--fill"></span>
+                        <!-- <input type="range"> -->
+                      </div>
+                    </div>
+
+                    <div class="image-filter__item image-filter__item">
+                      <button class="image-filter__button image-filter__button--contrast" type="button"></button>
+                      <div class="image-filter__range image-filter-range">
+                        <span class="image-filter-range__scale">
+                          <span class="image-filter-range__bar" style="width: 50%"></span>
+                        </span>
+                        <span class="image-filter-range__to image-filter-range__thumb--contrast"></span>
+                        <!-- <input type="range"> -->
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-photo__button-group">
+                    <button class="form-photo__button form-photo__button--download" type="submit">Запостить</button>
+                    <button class="form-photo__button form-photo__button--reset" type="reset">Отмена</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+<!-- Footer -->
+
+    <footer class="catalog__footer catalog-footer footer">
+      <div class="catalog-footer__wrapper">
+        <div class="catalog-footer__logo">
+          <img class="catalog-footer__image" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Логотип сервиса «Pink»">
+        </div>
+        <div class="catalog-footer__social social">
+          <ul class="social__list list social-list">
+            <li class="social-list__item">
+              <a href="#">
+                <img src="img/twitter.svg" alt="Ссылка на твиттер">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">
+                <img src="img/facebook.svg" alt="Ссылка на твиттер">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">
+                <img src="img/youtube.svg" alt="Ссылка на твиттер">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/html academy.svg" alt="Логотип Html academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
