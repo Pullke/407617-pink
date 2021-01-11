@@ -11,17 +11,20 @@
 <!-- Header -->
 
     <header class="page__header page-header header">
-      <nav class="page-header__main-nav main-nav">
+      <nav class="page-header__main-nav main-nav main-nav--open">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
-            <img class="main-nav__image" src="img/pink-logo-mobile.svg" width="74" height="23" alt="Сервис «Pink»">
-          </a>
-          <button class="main-nav__toggle toggle">
-            <span class="toggle__text visually-hidden">Открыть меню</span>
-          </button>
+          <div class="main-nav__logo-wrapepr">
+            <a class="main-nav__logo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/pink-logo-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/pink-logo-white-tablet.svg">
+                <img class="main-nav__image" src="img/pink-logo-mobile.svg" width="74" height="23" alt="Сервис «Pink»">
+              </picture>
+            </a>
+          </div>
           <ul class="main-nav__list list">
             <li class="main-nav__list-item list-item">
-              <a class="list-item__link link" href="">Главная</a>
+              <a class="list-item__link link list-item__link--current">Главная</a>
             </li>
             <li class="main-nav__list-item list-item">
               <a class="list-item__link link" href="catalog.html">Фотографии</a>
@@ -33,6 +36,9 @@
               <a class="list-item__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
+          <button class="main-nav__toggle toggle toggle--close">
+            <span class="toggle__text visually-hidden">Открыть меню</span>
+          </button>
         </div>
       </nav>
       <div class="page-header__box header-box">
