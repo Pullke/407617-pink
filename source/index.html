@@ -124,12 +124,12 @@
         <h2 class="reviews__title visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper">
           <blockquote class="reviews__one review">
-            <cite class="review__author">
-              Николай Петров
-              <span class="review__data">25 лет, водитель трамвая</span>
-            </cite>
             <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <cite class="review__author">
+                <span class="review__name">Николай Петров</span>
+                <span class="review__data">25 лет, водитель трамвая</span>
+              </cite>
           </blockquote>
         </div>
         <ul class="reviews__slider-controls slider-controls list">
@@ -141,6 +141,18 @@
           </li>
           <li class="slider-controls__item">
             <button class="slider-controls__switch slider-controls__switch--three" type="button"></button>
+          </li>
+        </ul>
+        <ul class="reviews__slider-controls-arrows slider-controls__arows list">
+          <li class="slider-controls__arows-item">
+            <button class="slider-controls__arrow slider-controls__arrow--left">
+              <span class="arrow--left visually-hidden">Влево</span>
+            </button>
+          </li>
+          <li class="slider-controls__arows-item">
+            <button class="slider-controls__arrow slider-controls__arrow--right">
+              <span class="arrow--right visually-hidden">Вправо</span>
+            </button>
           </li>
         </ul>
       </section>
@@ -157,7 +169,7 @@
                 <span class="price-table__title">База</span>
                 <span class="price-table__cost">1,99 USD</span>
               </th>
-              <th class="price-table__head">
+              <th class="price-table__head price-table__head--hit">
                 <span class="price-table__title">Стандарт</span>
                 <span class="price-table__cost">3,99 USD</span>
               </th>
@@ -185,19 +197,19 @@
               <td class="price-table__cell price-table__cell--yes">Комментарии</td>
             </tr>
           </table>
-          <div class="price__slider-box">
-            <ul class="price__slider-controls slider-controls list">
-              <li class="slider-controls__item">
-                <button class="slider-controls__switch slider-controls__switch--one" type="button"></button>
-              </li>
-              <li class="slider-controls__item">
-                <button class="slider-controls__switch slider-controls__switch--two" type="button"></button>
-              </li>
-              <li class="slider-controls__item">
-                <button class="slider-controls__switch slider-controls__switch--three" type="button"></button>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div class="price__slider-box">
+          <ul class="price__slider-controls slider-controls list">
+            <li class="slider-controls__item">
+              <button class="slider-controls__switch slider-controls__switch--one" type="button"></button>
+            </li>
+            <li class="slider-controls__item">
+              <button class="slider-controls__switch slider-controls__switch--two" type="button"></button>
+            </li>
+            <li class="slider-controls__item">
+              <button class="slider-controls__switch slider-controls__switch--three" type="button"></button>
+            </li>
+          </ul>
         </div>
       </section>
 
