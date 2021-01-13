@@ -1,8 +1,8 @@
-.page-header {
+.header {
   height: 66px;
   padding-bottom: 396px;
   margin-bottom: 283px;
-  background-image: url("../img/phone-mobile.png"), url("../img/back-mobile.jpg");
+  background-image: url(../img/phone-mobile.png), url("../img/back-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: bottom, bottom;
@@ -26,6 +26,60 @@
     background-position: right bottom, bottom;
   }
 }
+
+// .test {
+//   background-image: url("../img/phone-mobile.png");
+//   background-repeat: no-repeat;
+//   background-size: auto;
+//   background-position: bottom 285px center;
+// }
+
+
+// Form header
+
+.form-header {
+  height: 66px;
+  padding-bottom: 171px;
+  margin-bottom: 0;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+    padding-bottom: 171px;
+    margin-bottom: 0;
+    background-image: url("../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 284px;
+    margin-bottom: 0;
+    background-image:url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+.form-box {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-box__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  color: @basic_white;
+}
+
+//  Main nav
 
 .main-nav {
   position: relative;
@@ -52,7 +106,7 @@
 .main-nav__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   padding: 0 20px;
 

@@ -40,10 +40,10 @@
             </li>
           </ul>
         </div>
-        <div class="form-header__box form-box">
-          <h1 class="form-box__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </div>
       </nav>
+      <div class="form-header__box form-box">
+        <h1 class="form-box__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
 
 <!-- Main -->
@@ -69,9 +69,10 @@
               <input class="form-group__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
-          <fieldset class="form-group__group form-group form-group__checkbox">
-            <legend class="form-group__group-title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form-group__group-list group-list">
+
+          <fieldset class="form__group form-group form-group__checkbox">
+            <legend class="form-group__title form-group__title--checkbox">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form-group__group-list list group-list">
               <li class="group-list__item group-list-item">
                 <input class="group-list-item__checkbox" type="checkbox" name="achievements" id="achievement-1" checked>
                 <label class="group-list-item__text" for="achievement-1">Сделал селфи с акулой</label>
@@ -98,36 +99,39 @@
               </li>
             </ul>
           </fieldset>
+
           <fieldset class="form__group form-group form-group__contacts">
-            <legend class="form-group__title">Контактная информация</legend>
+            <legend class="form-group__title--contacts">Контактная информация</legend>
             <div class="form-group__wrapper">
-              <div class="form-group__field form-group__fields--contact">
+              <div class="form-group__box">
                 <label class="form-group__label form-group__label--contact" for="phone">Номер телефона </label>
                 <input class="form-group__field form-group__field--contact" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
               </div>
-              <div class="form-group__field form-group__fields--contact">
+              <div class="form-group__box">
                 <label class="form-group__label form-group__label--contact" for="mail">Адрес почты </label>
                 <input class="form-group__field form-group__field--contact" type="email" name="mail" id="mail" placeholder="Введите почту *">
               </div>
             </div>
           </fieldset>
+
           <fieldset class="form__group form-group form-group__radio">
             <legend class="form-group__title">С каким приложением путешествовали?</legend>
-            <ul class="form-group__group-list group-list">
-              <li class="group-list__item group-list-item">
+            <ul class="form-group__group-list list group-list">
+              <li class="group-list__item group-list-item--radio">
                 <input class="form-group__field form-group__field--radio" type="radio" name="app-choice" id="ios" checked>
                 <label class="form-group__label form-group__label--radio" for="ios">Pink для iOS</label>
               </li>
-              <li class="group-list__item group-list-item">
+              <li class="group-list__item group-list-item--radio">
                 <input class="form-group__field form-group__field--radio" type="radio" name="app-choice" id="android">
                 <label class="form-group__label form-group__label--radio" for="android">Pink на Android</label>
               </li>
-              <li class="group-list__item group-list-item">
+              <li class="group-list__item group-list-item--radio">
                 <input class="form-group__field form-group__field--radio" type="radio" name="app-choice" id="windowsphone">
                 <label class="form-group__label form-group__label--radio" for="windowsphone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
+
           <fieldset class="form__group form-group form-group__textarea">
             <legend class="form-group__title">Опишите свои эмоции</legend>
             <div class="form-group__field form-group__field--textarea">
@@ -145,31 +149,31 @@
 
 <!-- Footer -->
 
-    <footer class="form__footer form-footer footer">
-      <div class="form-footer__wrapper">
-        <div class="form-footer__logo">
-          <img class="form-footer__image" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Логотип сервиса «Pink»">
+    <footer class="page__footer page-footer footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img class="page-footer__image" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Логотип сервиса «Pink»">
         </div>
-        <div class="form-footer__social social">
+        <div class="page-footer__social social">
           <ul class="social__list list social-list">
             <li class="social-list__item">
               <a href="#">
-                <img src="img/twitter.svg" alt="Ссылка на Твиттер">
+                <img src="img/twitter.svg" alt="Ссылка на твиттер">
               </a>
             </li>
             <li class="social-list__item">
               <a href="#">
-                <img src="img/facebook.svg" alt="Ссылка на Фэйсбук">
+                <img src="img/facebook.svg" alt="Ссылка на твиттер">
               </a>
             </li>
             <li class="social-list__item">
               <a href="#">
-                <img src="img/youtube.svg" alt="Ссылка на Ютуб">
+                <img src="img/youtube.svg" alt="Ссылка на твиттер">
               </a>
             </li>
           </ul>
         </div>
-        <div class="form-footer__copyright copyright">
+        <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="img/html academy.svg" alt="Логотип Html academy">
