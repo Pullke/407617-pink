@@ -1,0 +1,243 @@
+// .about {
+//   margin: 0 auto;
+// }
+
+.about__appeal {
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 46px;
+  padding-bottom: 0;
+  font-size: 24px;
+  font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+.about__question,
+.about__answer {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 588px;
+    margin-bottom: 14px;
+  }
+}
+
+.about__answer {
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+  }
+}
+
+.about-list__wrapper {
+  padding: 0 20px;
+  background-image: url("../img/grey-background.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/grey-background.svg");
+    background-position: top;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../img/grey-background.svg");
+    background-position: top -100px center;
+    background-size: cover;
+  }
+}
+
+.about-list__box {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 325px;
+  background-image: url("../img/phone-background-mobile.png");
+  background-position: bottom -43px center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding-bottom: 49px;
+    background-image: url("../img/phone-background-tablet.png");
+    background-position: bottom -66px left;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 920px;
+    padding-bottom: 0;
+    background-image: none;
+  }
+}
+
+.about-list {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 123px;
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 920px;
+    padding-top: 66px;
+    padding-bottom: 59px;
+  }
+}
+
+.about-item {
+  @media (min-width: @desktop-width) {
+    width: 252px;
+    padding-right: 20px;
+  }
+}
+
+.about-item:last-child {
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.about-item__box {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 300px;
+    text-align: center;
+  }
+}
+
+.about-item__box--fun {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/phone-fun.png");
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-item__box--changesworld {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/phone-changesworld.png");
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-item__box--newfriends {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/phone-newfriends.png");
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-item__title {
+  font-size: 18px;
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    justify-items: center;
+    margin: 0;
+    padding-top: 59px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    line-height: 30px;
+    color: @basic_black;
+    background-color: @basic_gray;
+  }
+}
+
+.about-item__text {
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0 5px;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: @basic_gray;
+  }
+}
+
+.about__diagram-box {
+  @media (min-width: @desktop-width) {
+    background-color: @basic_gray;
+    padding-bottom: 67px;
+  }
+}
+
+.about__diagram {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 102px;
+    background-image: url("../img/stopwatch-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left 20px;
+    background-size: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 920px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 53px;
+    background-size: contain;
+  }
+}
+
+.diagram__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    margin: 0 auto;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 534px;
+    margin: 0 auto;
+    margin-left: 350px;
+  }
+}
+
+.diagram__title {
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    color: @basic_black;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin: 0;
+    padding-top: 115px;
+  }
+}
+
+.diagram__link {
+  color: @hover_red;
+}
