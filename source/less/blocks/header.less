@@ -48,7 +48,7 @@
 
   @media (min-width: @tablet-width) {
     height: 110px;
-    padding-bottom: 171px;
+    padding-bottom: 333px;
     margin-bottom: 0;
     background-image: url("../img/back-tablet.jpg");
     background-repeat: no-repeat;
@@ -69,6 +69,14 @@
 .form-box {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 920px;
+  }
 }
 
 .form-box__title {
@@ -77,6 +85,11 @@
   line-height: normal;
   text-align: center;
   color: @basic_white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -60px;
+    font-size: 50px;
+  }
 }
 
 //  Main nav
