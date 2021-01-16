@@ -50,8 +50,20 @@
   margin-right: 0;
 }
 
+.social-list__item:focus,
 .social-list__item:hover {
   border: 3px solid @basic_color;
+}
+
+.social-list__item:active {
+  opacity: 0.3;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
 }
 
 .page-footer__copyright {
