@@ -11,7 +11,7 @@
 <!-- Header -->
 
     <header class="form__header form-header header">
-      <nav class="form-header__main-nav main-nav">
+      <nav class="form-header__main-nav main-nav main-nav--closed">
         <div class="main-nav__wrapper">
           <div class="main-nav__logo-wrapepr">
             <a class="main-nav__logo" href="index.html">
@@ -22,7 +22,7 @@
               </picture>
             </a>
           </div>
-          <button class="main-nav__toggle toggle">
+          <button class="main-nav__toggle toggle main-nav__toggle--closed">
             <span class="toggle__text visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list list">
@@ -54,7 +54,7 @@
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         <span class="form-main__title--addition">Пожалуйста, заполните форму ниже:</span>
       </p>
-        <form class="form-main__form form" action="">
+        <form class="form-main__form form" name="pink" method="post" action="https://echo.htmlacademy.ru/">
 
         <!-- Name -->
           <div class="form__wrapper form__wrapper--name">
@@ -62,11 +62,11 @@
               <ul class="group-name__list list">
                 <li class="group-name__item">
                   <label class="group-name__label" for="surname">Фамилия:</label>
-                  <input class="group-name__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+                  <input class="group-name__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
                 </li>
                 <li class="group-name__item">
                   <label class="group-name__label" for="name">Имя:</label>
-                  <input class="group-name__field" type="text" name="name" id="name" placeholder="Укажите ваше имя *">
+                  <input class="group-name__field" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
                 </li>
                 <li class="group-name__item">
                   <label class="group-name__label" for="patronymic">Отчество:</label>
@@ -117,15 +117,15 @@
               <legend class="group-contacts__title">Контактная информация</legend>
               <ul class="group-contacts__list list">
                 <li class="group-contacts__item">
-                  <label class="group-contact__label" for="phone">Номер телефона </label>
+                  <label class="group-contact__label" for="phone">Номер телефона</label>
                   <div class="group-contact__box-field group-contact__box-field--phone">
                     <input class="group-contact__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
                   </div>
                 </li>
                 <li class="group-contacts__item">
-                  <label class="group-contact__label" for="mail">Адрес почты </label>
+                  <label class="group-contact__label" for="mail">Адрес почты</label>
                   <div class="group-contact__box-field group-contact__box-field--mail">
-                    <input class="group-contact__field" type="email" name="mail" id="mail" placeholder="Введите почту *">
+                    <input class="group-contact__field" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
                   </div>
                 </li>
               </ul>
@@ -140,17 +140,14 @@
               <ul class="group-radio__list list">
                 <li class="group-radio__item">
                   <input class="group-radio__field visually-hidden" type="radio" name="app-choice" id="ios" checked>
-                  <!-- <span class="group-radio__radio"></span> -->
                   <label class="group-radio__label" for="ios">Pink для iOS</label>
                 </li>
                 <li class="group-radio__item">
                   <input class="group-radio__field visually-hidden" type="radio" name="app-choice" id="android">
-                  <!-- <span class="group-radio__radio"></span> -->
                   <label class="group-radio__label" for="android">Pink на Android</label>
                 </li>
                 <li class="group-radio__item">
                   <input class="group-radio__field visually-hidden" type="radio" name="app-choice" id="windowsphone">
-                  <!-- <span class="group-radio__radio"></span> -->
                   <label class="group-radio__label" for="windowsphone">Windows Phone</label>
                 </li>
               </ul>
@@ -213,5 +210,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

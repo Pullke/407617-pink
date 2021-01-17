@@ -570,7 +570,7 @@
 }
 
 .group-textarea__textarea {
-  width: 100%;
+  width: 280px;
   height: auto;
   margin-top: 42px;
   margin-bottom: 53px;
@@ -582,14 +582,18 @@
   border: 2px solid @special_gray;
   border-radius: 1px;
   resize: none;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    width: 500px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
+    width: 820px;
     margin-top: 44px;
     margin-bottom: 45px;
+    box-sizing: border-box;
   }
 }
 
