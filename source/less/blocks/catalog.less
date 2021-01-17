@@ -1,0 +1,256 @@
+.user-gallery__text {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 54px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.user-gallery__post {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.user-post--end {
+  margin-bottom: 0;
+}
+
+.user-post__image--new {
+  width: 100%;
+}
+
+.user-post__image {
+  width: 280px;
+}
+
+.user-post__link-wrapper {
+  position: relative;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.user-post__name {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @basic_white;
+  background-color: @hover_red;
+}
+
+.user-post__box {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: @basic_gray;
+}
+
+.user-post__box--new {
+  width: 253px;
+  margin: 0 auto;
+  margin-top: -7px;
+  padding: 20px 10px 26px 17px;
+  padding-bottom: 26px;
+  background-color: @basic_gray;
+}
+
+.user-post__text {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.user-post__author {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.user-post__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.user-post__rating {
+  display: flex;
+}
+
+.user-post__like-button {
+  padding: 0;
+}
+
+.user-post__like-button::before {
+  content: "";
+  position: absolute;
+  margin-top: -6px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/heart.svg");
+  background-color: @basic_gray;
+}
+
+.user-post__like-counter {
+  margin: 0;
+  padding-left: 31px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: @hover_red;
+}
+
+.user-gallery__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.user-post__text-wrapper {
+  padding: 20px 10px  25px 17px;
+}
+
+.user-post__new {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 49px;
+  padding-bottom: 41px;
+}
+
+.user-post__appeal {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 52px;
+  text-align: center;
+}
+
+.form-photo {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: @basic_gray;
+}
+
+.form-photo__file {
+  display: none;
+}
+
+.image-filter {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-filter__button {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 75px;
+  padding: 0;
+  border: none;
+}
+
+// .active {
+//   fill: @hover_red;
+// }
+
+.image-filter__button--crop {
+  background-image: url("../img/crop-active.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-filter__button--fill {
+  background-image: url("../img/fill.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.image-filter__button--contrast {
+  background-image: url("../img/contrast.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.image-filter__button--fill:hover,
+.image-filter__button--contrast:hover {
+  opacity: 0.5;
+}
+
+.form-photo__button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 30px;
+}
+
+.form-photo__button--download {
+  margin-bottom: 12px;
+  color: @hover_red;
+  border: 3px solid @hover_red;
+}
+
+.form-photo__button--download:focus,
+.form-photo__button--download:hover {
+  color: @basic_white;
+  background-color: @hover_red;
+  border: 3px solid @hover_red;
+}
+
+.form-photo__button--download:active {
+  color: fade(@basic_white, 30%);
+  background-color: @hover_red;
+}
+
+.form-photo__button--reset {
+  color: @basic_color;
+  border: 3px solid @basic_color;
+  opacity: 0.1;
+}
+
+.form-photo__button--reset:focus,
+.form-photo__button--reset:hover {
+  opacity: 0.3;
+}
+
+.form-photo__button--reset:active {
+  color: @basic_white;
+  background-color: @basic_color;
+  opacity: 0.3;
+}
+
+.image-filter__item .image-filter-range {
+  display: none;
+}
+
+.image-filter__item--active .image-filter-range {
+  position: absolute;
+  bottom: 34px;
+  display: block;
+  width: 240px;
+  height: 2px;
+  background-color: @basic_color;
+}
+
+.image-filter-range__to {
+  position: absolute;
+  bottom: -9px;
+  left: 80%;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: @basic_white;
+  border-radius: 50%;
+  border: 2px solid @hover_red;
+}

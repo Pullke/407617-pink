@@ -52,16 +52,18 @@
       <section class="catalog-main__user-gallery user-gallery">
         <h2 class="user-gallery__title visually-hidden">Галлерея пользователей</h2>
         <p class="user-gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <article class="user-gallery__post user-post">
+        <article class="user-gallery__post user-post--panorama">
           <a class="user-post__link" href="#">
-            <span class="user-post__name">Панорама дня</span>
-            <picture>
+            <span class="user-post__link-wrapper">
+              <span class="user-post__name">Панорама дня</span>
+            </span>
+            <picture class="user-post__link--picture">
               <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама" class="user-post__image">
+              <img class="user-post__image--new" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама" class="user-post__image">
             </picture>
           </a>
-          <div class="user-post__box">
+          <div class="user-post__box user-post__box--new">
             <p class="user-post__author">
               Анна
               <span class="user-post__time">(5 минут назад)</span>
@@ -76,6 +78,7 @@
             </div>
           </div>
         </article>
+
         <div class="user-gallery__container">
 
           <article class="user-gallery__post user-post">
@@ -87,17 +90,19 @@
                   <img class="user-post__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя">
                 </picture>
               </a>
-              <p class="user-post__author">
-                Левон
-                <span class="user-post__time">(5 часов назад)</span>
-              </p>
-              <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="user-post__rating">
-                <button class="user-post__like-button" type="button"></button>
-                <p class="user-post__like-counter">
-                  Нравится:
-                  <span class="user-post__like-number">356</span>
+              <div class="user-post__text-wrapper">
+                <p class="user-post__author">
+                  Левон
+                  <span class="user-post__time">(5 часов назад)</span>
                 </p>
+                <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="user-post__rating">
+                  <button class="user-post__like-button" type="button"></button>
+                  <p class="user-post__like-counter">
+                    Нравится:
+                    <span class="user-post__like-number">356</span>
+                  </p>
+                </div>
               </div>
             </div>
           </article>
@@ -111,17 +116,19 @@
                   <img class="user-post__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя">
                 </picture>
               </a>
-              <p class="user-post__author">
-                Антон
-                <span class="user-post__time">(12 часов назад)</span>
-              </p>
-              <p class="user-post__text">Соседи будут рады!</p>
-              <div class="user-post__rating">
-                <button class="user-post__like-button" type="button"></button>
-                <p class="user-post__like-counter">
-                  Нравится:
-                  <span class="user-post__like-number">666</span>
+              <div class="user-post__text-wrapper">
+                <p class="user-post__author">
+                  Антон
+                  <span class="user-post__time">(12 часов назад)</span>
                 </p>
+                <p class="user-post__text">Соседи будут рады!</p>
+                <div class="user-post__rating">
+                  <button class="user-post__like-button" type="button"></button>
+                  <p class="user-post__like-counter">
+                    Нравится:
+                    <span class="user-post__like-number">666</span>
+                  </p>
+                </div>
               </div>
             </div>
           </article>
@@ -135,17 +142,19 @@
                   <img class="user-post__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя">
                 </picture>
               </a>
-              <p class="user-post__author">
-                Борис
-                <span class="user-post__time">(20 часов назад)</span>
-              </p>
-              <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="user-post__rating">
-                <button class="user-post__like-button" type="button"></button>
-                <p class="user-post__like-counter">
-                  Нравится:
-                  <span class="user-post__like-number">215</span>
+              <div class="user-post__text-wrapper">
+                <p class="user-post__author">
+                  Борис
+                  <span class="user-post__time">(20 часов назад)</span>
                 </p>
+                <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="user-post__rating">
+                  <button class="user-post__like-button" type="button"></button>
+                  <p class="user-post__like-counter">
+                    Нравится:
+                    <span class="user-post__like-number">215</span>
+                  </p>
+                </div>
               </div>
             </div>
           </article>
@@ -159,17 +168,19 @@
                   <img class="user-post__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя">
                 </picture>
               </a>
-              <p class="user-post__author">
-                Сергей
-                <span class="user-post__time">(25 часов назад)</span>
-              </p>
-              <p class="user-post__text">Самая кубанская в мире!</p>
-              <div class="user-post__rating">
-                <button class="user-post__like-button" type="button"></button>
-                <p class="user-post__like-counter">
-                  Нравится:
-                  <span class="user-post__like-number">4</span>
+              <div class="user-post__text-wrapper">
+                <p class="user-post__author">
+                  Сергей
+                  <span class="user-post__time">(25 часов назад)</span>
                 </p>
+                <p class="user-post__text">Самая кубанская в мире!</p>
+                <div class="user-post__rating">
+                  <button class="user-post__like-button" type="button"></button>
+                  <p class="user-post__like-counter">
+                    Нравится:
+                    <span class="user-post__like-number">4</span>
+                  </p>
+                </div>
               </div>
             </div>
           </article>
@@ -183,22 +194,24 @@
                   <img class="user-post__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя">
                 </picture>
               </a>
-              <p class="user-post__author">
-                Максим
-                <span class="user-post__time">(40 часов назад)</span>
-              </p>
-              <p class="user-post__text">Где снег-то?</p>
-              <div class="user-post__rating">
-                <button class="user-post__like-button" type="button"></button>
-                <p class="user-post__like-counter">
-                  Нравится:
-                  <span class="user-post__like-number">150</span>
+              <div class="user-post__text-wrapper">
+                <p class="user-post__author">
+                  Максим
+                  <span class="user-post__time">(40 часов назад)</span>
                 </p>
+                <p class="user-post__text">Где снег-то?</p>
+                <div class="user-post__rating">
+                  <button class="user-post__like-button" type="button"></button>
+                  <p class="user-post__like-counter">
+                    Нравится:
+                    <span class="user-post__like-number">150</span>
+                  </p>
+                </div>
               </div>
             </div>
           </article>
 
-          <article class="user-gallery__post user-post">
+          <article class="user-gallery__post user-post user-post--end">
             <div class="user-post__box">
               <a href="">
                 <picture>
@@ -207,20 +220,23 @@
                   <img class="user-post__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя">
                 </picture>
               </a>
-              <p class="user-post__author">
-                Надежда
-                <span class="user-post__time">(45 часов назад)</span>
-              </p>
-              <p class="user-post__text">Всем GM и взаимные лайки!</p>
-              <div class="user-post__rating">
-                <button class="user-post__like-button" type="button"></button>
-                <p class="user-post__like-counter">
-                  Нравится:
-                  <span class="user-post__like-number">2560</span>
+              <div class="user-post__text-wrapper">
+                <p class="user-post__author">
+                  Надежда
+                  <span class="user-post__time">(45 часов назад)</span>
                 </p>
+                <p class="user-post__text">Всем GM и взаимные лайки!</p>
+                <div class="user-post__rating">
+                  <button class="user-post__like-button" type="button"></button>
+                  <p class="user-post__like-counter">
+                    Нравится:
+                    <span class="user-post__like-number">2560</span>
+                  </p>
+                </div>
               </div>
             </div>
           </article>
+        </div>
 
           <article class="user-post__new user-post-new">
             <p class="user-post__appeal">Затмите их всех! <br>
@@ -241,7 +257,7 @@
                 <div class="form-photo__filters filters">
                   <div class="filters__image-filter image-filter">
                     <div class="image-filter__item image-filter__item--active">
-                      <button class="image-filter__button image-filter__button--crop" type="button"></button>
+                      <button class="image-filter__button image-filter__button--crop active" type="button"></button>
                       <div class="image-filter__range image-filter-range">
                         <span class="image-filter-range__scale">
                           <span class="image-filter-range__bar" style="width: 80%"></span>
@@ -272,18 +288,18 @@
                         <!-- <input type="range"> -->
                       </div>
                     </div>
-
                   </div>
-
                   <div class="form-photo__button-group">
-                    <button class="form-photo__button form-photo__button--download" type="submit">Запостить</button>
+                    <button class="form-photo__button form-photo__button--download" type="submit">
+                      <span class="form-photo__button--text">Запостить</span>
+                    </button>
                     <button class="form-photo__button form-photo__button--reset" type="reset">Отмена</button>
                   </div>
                 </div>
               </form>
             </div>
           </article>
-        </div>
+        <!-- </div> -->
       </section>
     </main>
 
