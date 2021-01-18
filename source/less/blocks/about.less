@@ -67,12 +67,22 @@
   background-position: bottom -43px center;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/phone-background-mobile@2x.png");
+    background-size: 157px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 620px;
     padding-bottom: 49px;
     background-image: url("../img/phone-background-tablet.png");
     background-position: bottom -66px left;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-background-tablet@2x.png");
+      background-size: 268px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -132,6 +142,12 @@
     background-image: url("../img/phone-fun.png");
     background-position: top;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-fun@2x.png");
+      background-size: 300px;
+      background-position: top 8px center;
+    }
   }
 }
 
@@ -140,6 +156,12 @@
     background-image: url("../img/phone-changesworld.png");
     background-position: top;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-changesworld@2x.png");
+      background-size: 300px;
+      background-position: top 8px center;
+    }
   }
 }
 
@@ -148,6 +170,12 @@
     background-image: url("../img/phone-newfriends.png");
     background-position: top;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-newfriends@2x.png");
+      background-size: 300px;
+      background-position: top 8px center;
+    }
   }
 }
 
